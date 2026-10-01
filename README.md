@@ -11,3 +11,10 @@ Interface responsive, installation PWA, capture/choix d'image, édition locale d
 
 ## Non encore connecté
 La photo n'est pas analysée par IA. Il faut un backend sécurisé (clé API côté serveur), un moteur de recettes plus riche, comptes/synchronisation et tests. La publication iOS/Android nécessitera ensuite un client mobile (par exemple Expo) partageant le backend. Ce zip est le socle PWA, pas une publication store.
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+
+export default defineConfig({
+  plugins: [react()],
+  base: '/chef-maison/',
+})
